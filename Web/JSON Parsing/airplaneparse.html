@@ -1,0 +1,83 @@
+<html>
+
+    <head>
+    
+        <style>
+            
+            
+            .textinput {
+                position: absolute;
+                
+                margin-left: 40%;
+                margin-top: 10%;
+                
+                
+            }
+        
+        </style>
+        
+    <script>
+        
+        function alerting() {
+            
+            var a = document.getElementById("json1").value;
+            if (a.length < 1 or a.length == "") {
+                alert ("Please enter valid string!");
+            }
+            var airlines = { "Airline": "Alaska Airlines",
+          "IATA": "AS",
+          "Hubs": {
+            "Hub": [
+              "Seattle/Tacoma",
+              "Anchorage",
+              "Portland (OR)",
+              "San Diego",
+              "San Jose"
+            ]
+          },
+          "Notes": "Founded as McGee Airways, and commenced operations in 1944 as Alaska Airlines. Plans have been made for Alaska Airlines to acquire Virgin America.",
+          "HomePage": "https://www.alaskaair.com/",
+          "Plane": "http://cs-server.usc.edu:45678/hw/hw4/Alaska_Airlines,_Boeing_737.jpg"
+        }
+           };
+         
+    
+           /* else {*/
+       /*         var airlines = { "Airline": "Alaska Airlines",
+          "IATA": "AS",
+          "Hubs": {
+            "Hub": [
+              "Seattle/Tacoma",
+              "Anchorage",
+              "Portland (OR)",
+              "San Diego",
+              "San Jose"
+            ]
+          },
+          "Notes": "Founded as McGee Airways, and commenced operations in 1944 as Alaska Airlines. Plans have been made for Alaska Airlines to acquire Virgin America.",
+          "HomePage": "https://www.alaskaair.com/",
+          "Plane": "http://cs-server.usc.edu:45678/hw/hw4/Alaska_Airlines,_Boeing_737.jpg"
+        }
+           }
+         
+            for (i = 0; i<airlines.length;i++)
+                {
+                    document.writeln("Airplanes");
+                }
+            
+            */
+        
+        </script>
+    
+    </head>
+    
+    
+<body style = "text-align: center;">
+    <div class = textinput>
+    <h3>Enter URL for Airlines List JSON File</h3>
+    <input type = "text" name = "jsonfile" id = "json1" />
+    <p><input type = "button" value = "Submit Query" onclick="alerting()" /></p>
+    </div>
+    </body>
+    
+</html>

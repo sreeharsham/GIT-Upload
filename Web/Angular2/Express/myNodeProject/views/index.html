@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "angularjsNodejsTutorial">
+<head>
+    <title>Interacting AngularJS with nodeJS</title>
+    <script src = "http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    <script src="javascripts/app.js" type="text/javascript"></script> <!-- not created yet -->
+    
+    
+    </head>
+<body style = "background-color: aqua; background-image: url('http://cs-server.usc.edu:45678/hw/hw8/images/background.png')">
+    <div ng-app = "" style = "background-color: white">
+        <p><b>Enter Stock Ticker Symbol:</b>
+        <input type = "text" ng-model = "stockname"></p>
+        <button ng-click = "">Get Quote</button>
+        <button ng-click = "">Clear</button>
+    </div>
+        <div ng-controller="myController">
+            <ul ng-repeat="item in data">
+	<li>Name: {{item.name}}, City: {{item.city}}</li>
+</ul>
+        </div>
+    </body>
+
+
+</html>

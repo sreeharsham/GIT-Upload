@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Style id="polygonStyle">
+<PolyStyle>
+<color>dd4286f4</color>
+</PolyStyle>
+</Style>
+<Placemark><name>Dedeaux Field</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2899486,34.0238873</coordinates></Point>
+</Placemark>
+<Placemark><name>CS Salvatori</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2892311,34.0194442</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall School</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2860554,34.0188602</coordinates></Point>
+</Placemark>
+<Placemark><name>Dworak-Peck</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2826732,34.0222124</coordinates></Point>
+</Placemark>
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285423,34.0205332</coordinates></Point>
+</Placemark>
+<Placemark><name>Cinematic Arts</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2868874,34.0239582</coordinates></Point>
+</Placemark>
+<Placemark><name>SGM Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2891911,34.0211042</coordinates></Point>
+</Placemark>
+<Placemark><name>VKC Hall</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2835241,34.0213124</coordinates></Point>
+</Placemark>
+<Placemark><name>Home at W Adams</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2870554,34.0326312</coordinates></Point>
+</Placemark>
+<Placemark>
+<styleUrl>#polygonStyle</styleUrl>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+ -118.2860554,34.0188602
+ -118.2892311,34.0194442
+ -118.2899486,34.0238873
+ -118.2870554,34.0326312
+ -118.2826732,34.0222124
+ -118.2835241,34.0213124
+ -118.2860554,34.0188602
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon></Placemark>
+</Document></kml>

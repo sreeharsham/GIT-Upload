@@ -1,0 +1,30 @@
+    <ul type="none">
+            
+            <table>
+                <tr>
+                    <td>
+            <li><h2 id = "money"><img src = "http://cs-server.usc.edu:45678/hw/hw3/images/checkmark.png" alt = "checkmark"/>Money As Soon As Same Day</h2>
+                <p id = "money1">Receive your money as soon as the same day, if approved by noon.*</p>
+            </li>
+                    </td>
+            <td>
+                    <li><img src = "http://cs-server.usc.edu:45678/hw/hw3/images/checkmark.png" alt = "checkmark"/><h2 id="fixed">Fixed Rate</h2>
+            <p id = fixed1>Fixed montly payments, no pre-payment penalty.</p>
+            </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+            <li id = "large"><img src = "http://cs-server.usc.edu:45678/hw/hw3/images/checkmark.png" alt = "checkmark"/><h2>Large Branch Network</h2>
+                <p>Receive personalized service from more than 6,000 associates in more than 1,700 locations</p>
+            </li>
+                    </td>
+                    <td>
+            <li><img src = "http://cs-server.usc.edu:45678/hw/hw3/images/checkmark.png" alt = "checkmark"/><h2 id=quick>Quick Application With No Fees</h2>
+                <p id = "quick1">Apply in minutes. There are no fees to apply.</p></li>
+                    </td>
+                </tr>
+            </table>
+            
+            </ul>
+    

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing DOM</title>
+<script type="text/javascript">
+var xmlDoc;
+
+
+
+function loadXML(url) { 
+        var xmlhttp;
+      if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+       xmlhttp=new XMLHttpRequest();
+   }
+ else
+  {// code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.open("GET",url,false);
+  try { 
+      xmlhttp.send();
+  } 
+    catch(exception) {
+     alert ("File not found") ;
+        return false;
+  }
+  xmlDoc=xmlhttp.responseText;
+    var jsonResponse = JSON.parse(xmlDoc);
+    return jsonResponse;
+    
+    
+  
+ }  
+
+function xmlparse() {
+	var html = "";
+	html += ("before async");
+	html +=  ("<br />");
+	xmlDoc = loadXML("bookstore.xml");
+	html += ("xmlDoc is loaded, ready for use");
+	html += ("<br />");
+	var bookstore = xmlDoc.documentElement;
+	for (i=0;i< bookstore.childNodes.length ;i++) 
+	{
+		var book = bookstore.childNodes[i];
+		if (book.nodeType==1) 
+		{ 
+		html += ('<ul><li>');
+		html += ('<b>'+bookstore.childNodes[i].nodeName+' : </b>');
+		y = book.childNodes;
+			for (j=0;j<y.length;j++)
+			{
+				if (y[j].nodeType==1)
+				{
+					html += (y[j].nodeName + ": "); //-> title, author etc
+					html += (y[j].childNodes[0].nodeValue); //-> text values
+					html += ("<br />");
+				}
+			}
+		html += ('</li></ul>'); 
+		}
+	}
+	
+	document.getElementById("output").innerHTML = html;
+}
+</script>
+</head>
+<body>
+<h2>This is the domtest web page using DOM childnodes function</h2>
+<input type="button" name="submit" value="Submit Query"
+onClick="xmlparse()" />
+
+<div id="output">
+
+</div>
+
+
+
+
+
+<noscript>
+</body>
+</html>

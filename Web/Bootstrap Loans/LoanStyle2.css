@@ -1,0 +1,188 @@
+* {
+       font-family: sans-serif;
+    border: 1px solid rgba(0,0,0,0.3);
+
+}
+
+.entire {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+    
+.title {
+    
+    background-color: #004272;
+    color: white;
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.titles {
+background-color: #004272;
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 22;
+    
+}
+
+.titles h1 {
+    padding-top: 7%;
+    width: 80%;
+    
+    
+    text-align: center;
+    margin: auto;
+    
+}
+
+.titles p {
+    margin-top: 6%;
+    font-size: 25;
+}
+
+
+#button {
+    color: white;
+    text-decoration: none;
+      background: none;
+  border: none;
+  font-size: 1em;
+  color: white;
+    font-weight: 500;
+     background-color: #C60935;
+    cursor: hand;
+    
+}
+
+#button1 {
+     background-color: #C60935;
+    
+     color: white;
+    text-decoration: none;
+      cursor: hand;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 10%;
+    
+    
+}
+
+a.creditlogo {
+    margin-left: 85%;
+    
+    
+}
+
+
+a.getinfo {
+    display: block;
+    margin-top: 6%;
+    
+}
+
+h2.millions {
+    color: #0087D9;
+    text-align: center;
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+    font-size: 35;
+    margin-bottom: 10%;
+    
+}
+
+
+.lists {
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+.first2 {
+    display: inline-block;
+    
+}
+
+.first2 h4 {
+    width: 35%;
+    margin-left: 12%;
+    margin-top: -10%;    
+}
+
+.first2 p {
+    width: 45%;
+    font-size: 13;
+    text-align: left;
+    margin-left: 12%;
+    margin-top: -4%;
+}
+
+.fix {
+    text-align: right;
+}
+
+.fix h4 {
+    width: 35%;
+    text-align: left;
+    float: right;
+    margin-top: -22%;
+}
+
+.check2 {
+    margin-top: -22%;
+    margin-right: 36%;
+    
+}
+
+.fix p {
+    width: 35%;
+    font-size: 13;
+    text-align: left;
+    margin-left: 64.6%;
+    margin-top: -16%;
+}
+
+.large h4 {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: -9%;
+    
+}
+
+.large p {
+    width: 37%;
+    font-size: 13;
+    margin-left: 10%;
+    margin-top: -4%;
+}
+
+.quick h4 {
+    width: 35%;
+    margin-left: 64.6%;
+    margin-top: -21%;
+}
+
+.check4 {
+    margin-top: -21%;
+    margin-left: 55%;
+    
+}
+
+.quick p {
+    width: 35%;
+    font-size: 13;
+    margin-left: 64.6%;
+    margin-top: -4%;
+}
+
+.footer {
+    border-top-color: #0087D9;
+    border-top-width: 6px;
+    
+}

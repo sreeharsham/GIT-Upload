@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    
+    <title>Parse</title>
+    
+    <style>
+            
+            
+            .textinput {
+                position: absolute;
+                
+                margin-left: 40%;
+                margin-top: 10%;
+                
+                
+            }
+        
+        </style>
+    </head>
+    
+    <body style = "text-align: center;">
+    
+    <p id = "user"></p>    
+        <script type ="text/javascript">
+            
+            
+            function buildTable(jsonResponse) {
+            var a= jsonResponse.Mainline.Table.Header.Data[3];
+                 try  {
+                    if (jsonResponse.Mainline.Table.Row.length < 1 ) throw "No rows!";
+                    
+                }
+                catch(err) {
+                    err = "No rows!";
+                    alert(err);
+                    return;
+                }
+               // var b = jsonResponse.Mainline.Table.Row[1].Airline;
+                //alert(b);
+                var newtable = window.open("","","scrollbars = yes","resizable=yes","width=1200","height=800");
+                var tab = "<html><body><table border='3'> <tbody> <tr>\n"
+                
+                //newtable.document.write("<table border='3'> <tr>\n");
+                for ( var i in jsonResponse.Mainline.Table.Header.Data) {
+                tab += "<td><strong>" ;
+                   tab+= jsonResponse.Mainline.Table.Header.Data[i] ;
+                    tab+=" </strong></td>";
+                    //newtable.document.write("<td><strong>" + jsonResponse.Mainline.Table.Header.Data[i] + " </strong></td>");
+                }
+                tab += "</tr>";
+                
+                
+                //<a href = "http://www-scf.usc.edu/~smalapak/HW3_submission2final.html" style = " color: inherit">Link to Homework #3</a>
+               
+                
+                for(var j in jsonResponse.Mainline.Table.Row ) {
+                    
+                    tab+= "<tr><td>";
+                    tab+= jsonResponse.Mainline.Table.Row[j].Airline;
+                    tab+= "</td><td>";
+                    tab+= jsonResponse.Mainline.Table.Row[j].IATA;
+                    tab+= "</td>";
+                    tab+= "</td><td>";
+                    //for(var k in jsonResponse.Mainline.Table.Row[j].Hubs) {
+                    //tab+= "<ul>";
+                        //tab+= jsonResponse.Mainline.Table.Row[j].Hubs.Hub + "</li>";    
+                        var arr = jsonResponse.Mainline.Table.Row[j].Hubs.Hub;
+                        tab+= "<ul>";
+                        for(var k = 0 ; k< arr.length;k++) {
+                            if (k==0) {
+                                tab+="<li><strong>" + arr[k] + "</strong></li>"
+                            }
+                            else {tab+= "<li>" + arr[k] + "</li>";}
+                            
+                        }
+                    tab+= "</ul>";
+                    //}
+                    
+                    tab+= "</td>";
+                    tab+= "</td><td>";
+                    tab+= jsonResponse.Mainline.Table.Row[j].Notes;
+                    tab+= "</td>";
+                    tab+= "</td><td>";
+                    tab+= "<a href = \"" + jsonResponse.Mainline.Table.Row[j].HomePage + "\">" + jsonResponse.Mainline.Table.Row[j].HomePage +  "</a>";
+                    tab+= "</td>";
+                    tab+= "</td><td>";
+                    tab+= "<img src = \"" + jsonResponse.Mainline.Table.Row[j].Plane + "\" width = \"100%\" 'height = '100%'\"/>";
+                    tab+= "</td>";
+                    tab+="</tr>";
+                }
+                tab += "</tr></tbody></table>";
+                /*for(var k in jsonResponse.Mainline.Table.Row ) {
+                    tab+= "<tr><td>";
+                    tab+= jsonResponse.Mainline.Table.Row[k].IATA;
+                    tab+= "</td>";
+                }*/
+                
+                
+                
+                //newtable.document.write("</tr><tr>")
+                //for (var j in jsonResponse.Mainline.Table.Row) {
+                  //  newtable.document.write("<tr><td>" + jsonResponse.Mainline.Table.Row[j].Airline + "</td>"  );
+                //}
+                //newtable.document.write("</tr>");
+                //+ "<td>"+ jsonResponse.Mainline.Table.Row[j].IATA + "</td>"
+                //for (var k in jsonResponse.Mainline.Table.Row) {
+                  //  newtable.document.write("<tr><td>" + jsonResponse.Mainline.Table.Row[j].IATA + "</td>"  );
+                //}
+                newtable.document.write(tab);
+                //newtable.document.write("</tr></table></body></html>");
+            }
+                
+            
+            
+            
+        
+        function getxml() {
+            var text1 = document.getElementById('textvalue').value;
+            
+           if (text1.length<1) {
+               alert("Please enter a valid file!");
+               return;
+           }
+           
+            
+            
+        /* if (text1 == "Airlinelist.json")   {
+             alert("yeah!!");
+         }
+            
+            else {
+                alert("Naww!");
+                
+            }*/
+         //   if (text1 === "A.json") {
+            loadXML(text1);
+           // }
+            //else {
+              //  alert ("File not found. Please check file!");
+                //return;
+            //}
+        }
+        
+            
+          function loadXML(url) { 
+        try {
+              var xmlhttp;
+             // alert(url);
+      if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+       xmlhttp=new XMLHttpRequest();
+      //alert("hi");
+   }
+ else
+  {// code for IE6, IE5
+      //alert(url);
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+        }
+              catch(mes) {
+                 alert("No such file! Parse error!") 
+          }
+  
+              //try and catch comment
+  try {
+  xmlhttp.open("GET",url,false);
+   //console.log("hello");
+      xmlhttp.send();
+  } 
+    catch(exc) {
+     alert ("Specified file not present in the folder! Please check the file " + url) ;
+        return;
+  }
+  xmlDoc=xmlhttp.responseText;
+          if (xmlDoc == "")    {
+              alert("Empty file!");
+              return;
+          }
+              
+  
+              try {
+    var jsonResponse = JSON.parse(xmlDoc);
+              }
+              catch(abc) {
+                  alert("No such file in the directory");
+              }
+   
+              
+              
+              
+   buildTable(jsonResponse);
+              
+
+              //table_data += "<td>"
+            // var newtable = window.open("","","scrollbars = yes","width=1200","height=800");
+              
+              /*var table_data;
+             table_data += "<html> <body> <table border = '5' width = '600' height = '600'>";
+    table_data += "<tr>"
+              
+              document.write(jsonResponse.Mainline.Table.Row[1].Airline);
+              
+              table_data += "</td> </tr> </table> </body> </html>"*/
+             // newtable.document.write("<!DOCTYPE html>\n<html><head></head>\n<body>\n");
+			 // newtable.document.write("<table border='3'>\n");
+              //  newtable.document.write("<tr><td>" + jsonResponse[level1] + " </td></tr></table></body></html>");
+     //         document.write(Object.keys(jsonResponse));
+              
+              //level1 = (Object.keys(jsonResponse)); //mainline
+              
+            
+              
+          /*    for (var level1 in jsonResponse) {
+                  //console.log("Level " + level1);
+                  
+                  console.log(jsonResponse[level1]);
+                  
+                //  console.log("This is level1 " + level1);
+                  
+                  for (var level2 in jsonResponse[level1]) {
+                  
+                    //  console.log("inside level" + level2);
+                     // console.log("This is level2 " + level2);
+                      //console.log(jsonResponse[item][subitem]);
+                        for(var level3 in jsonResponse[level1][level2])  {
+                       //     console.log("inside level" + level3);
+                       //     console.log("This is level3 " + level3);
+                            /*for (var level4 in jsonResponse[level1][level2][level3])  {
+                                console.log("This is level4 " + level4);
+                            }
+                            //}
+                  }
+                  
+              }*/
+         
+            
+              
+
+              
+             /* var r = []
+    for (var k in jsonResponse) {
+        if (!jsonResponse.hasOwnProperty(k)) 
+            continue
+        r.push(k)
+    }
+  alert(r);*/
+              
+              //vMainline = Object.keys(jsonResponse);
+              //alert(vMainline);
+ 
+ 
+
+
+//alert("total " + keys.length + " keys: " + keys);
+              
+    //jsonToTable(jsonResponse);
+    
+    
+  
+ }
+            
+        
+            
+            
+            
+        
+        </script>
+    
+    <div class = "textinput">
+    <h3>Enter URL for Airlines List JSON File</h3>
+   <input type="text" name = "textbox1" id = "textvalue" />
+        <p>     <input type = "button" id = "1" value = "Submit Query" onclick="getxml();"/></p>
+        
+    </div>
+    
+    </body>
+
+
+
+</html>

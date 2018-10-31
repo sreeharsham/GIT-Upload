@@ -1,0 +1,35 @@
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+
+var obj = JSON.parse('{"Airline": "Alaska Airlines","IATA": "AS","Notes": "Founded as McGee Airways, and commenced operations in 1944 as Alaska Airlines. Plans have been made for Alaska Airlines to acquire Virgin America.","HomePage": "https://www.alaskaair.com/","Plane": "http://cs-server.usc.edu:45678/hw/hw4/Alaska_Airlines,_Boeing_737.jpg"}');
+document.getElementById("demo").innerHTML = obj.Airline + ", " + obj.IATA + "," + obj.Notes;
+
+</script>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Create Object from JSON String</h2>
+<p>
+First Name: <span id="fname"></span><br> 
+Last Name: <span id="lname"></span><br> 
+</p> 
+<script>
+var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';  
+var contact = JSON.parse(jsontext);  
+document.write(contact.surname + ", " + contact.firstname);  
+document.write(contact.phone[1]);  
+</script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+* {
+       font-family: sans-serif;
+/*    border: 1px solid rgba(0,0,0,0.3);*/
+
+}
+
+.entire {
+    
+    margin: 0 auto;
+    
+}
+
+
+.banner {
+    
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    padding-top: 2%;
+    
+}
+
+
+
+.banner h6 {
+    width: 80%;
+    
+    color: #0087D9;
+    
+}
+
+
+.onelogo {
+    /*border: solid;*/
+    width: 52%;
+    
+    
+    
+}
+
+.onelogo img {
+    /*background-color: black;*/
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+
+
+
+.applybutton {
+    
+}
+
+#bu {
+    color: white;
+    text-decoration: none;
+    background: none;
+  border: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+       background-color: #C60935;
+  width: 100%;
+    height: 200%;
+    cursor: pointer;
+   box-shadow: inset 0 0 8px white; 
+}
+
+
+#bu:hover {
+  background: #ec0018;
+}
+
+
+.button {
+    color: white;
+    text-decoration: none;
+      background: none;
+  border: none;
+  font-size: 1em;
+  margin-top: -18%;
+    font-weight: 500;
+  
+    cursor: hand;
+    
+}
+
+
+.title {
+    
+    background-color: #004272;
+    color: white;
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.titles {
+background-color: #004272;
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 22;
+    
+}
+
+.titles h1 {
+    padding-top: 7%;
+    width: 80%;
+    
+    
+    text-align: center;
+    margin: auto;
+    
+}
+
+.titles p {
+    margin-top: 6%;
+    font-size: 25;
+}
+
+
+.center {
+    width: 90%;
+    margin: auto;
+}
+
+.center img {
+    float: right;
+}
+
+
+#button1 {
+     background-color: #C60935;
+    cursor: pointer;
+     color: white;
+    text-decoration: none;
+      width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 0.7em;
+    border-radius: 10%;
+    box-shadow: inset 0 0 3px white; 
+    
+}
+
+#button1:hover {
+  background: #ec0018;
+}
+
+#uniq {
+    float: right;
+    margin-top: -4%;
+    
+}
+
+.infobutton {
+    width : 80%;
+    margin: auto;
+    
+}
+
+a.creditlogo {
+    margin-left: 85%;
+    
+    
+}
+
+
+a.getinfo {
+    display: block;
+    margin: auto;
+    
+    width: 15%;
+    height: 5%;
+}
+
+h2.millions {
+    color: #0087D9;
+    text-align: center;
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+    font-size: 35;
+    padding-bottom: 5%;
+    
+}
+
+
+.lists {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 45%;
+}
+
+.tab {
+    width: 80%;
+}
+
+
+.first2 {
+    display: inline-block;
+    
+}
+
+.first2 h4 {
+    width: 35%;
+    margin-left: 12%;
+    margin-top: -10%;    
+}
+
+.first2 p {
+    width: 45%;
+    font-size: 13;
+    text-align: left;
+    margin-left: 12%;
+    margin-top: -4%;
+}
+
+.fix {
+    text-align: right;
+}
+
+.fix h4 {
+    width: 35%;
+    text-align: left;
+    float: right;
+    margin-top: -22%;
+}
+
+.check2 {
+    margin-top: -22%;
+    margin-right: 36%;
+    
+}
+
+.fix p {
+    width: 35%;
+    font-size: 13;
+    text-align: left;
+    margin-left: 64.6%;
+    margin-top: -16%;
+}
+
+.large h4 {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: -9%;
+    
+}
+
+.large p {
+    width: 37%;
+    font-size: 13;
+    margin-left: 10%;
+    margin-top: -4%;
+}
+
+.quick h4 {
+    width: 35%;
+    margin-left: 64.6%;
+    
+}
+
+.check4 {
+    margin-top: -21%;
+    margin-left: 55%;
+    
+}
+
+.quick p {
+    width: 35%;
+    font-size: 13;
+    margin-left: 64.6%;
+    margin-top: -4%;
+}
+
+.footer {
+    border-top: solid #0087D9;
+    border-top-width: 12px;
+    background-color: #004272;
+    color: white;
+}
+
+.low {
+    font-size: 70%;
+    color: white;
+    width: 90%;
+    height: 7%;
+    margin: auto;
+    
+}
+
+.low a {
+    text-decoration: none;
+    color: white;
+}
+
+.low h4 {
+    
+    width: 28%;
+    height: 60%;
+}
+
+
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+.ulist {
+    color: #0087D9;
+    float: right;
+    width: 20%;
+    margin: auto;
+}
+
+
+.footer h5 {
+        
+    
+    font-size: 60%;
+    padding-bottom: 3%;
+    width: 90%;
+    
+    margin: auto;
+    
+    /*padding-top: 50px;
+    border-top-width: thin;
+    border-top-color: #0087D9;*/
+}
+
+/*.footer {
+    border-top-color: #0087D9;
+    border-top-width: 16px;
+       
+}*/
+
+
+.m{
+    width: 50%;
+    text-align: left;
+}
+
+
+.right {
+    display: inline-block;
+    float: right;
+    padding-bottom: 10%;
+    
+    text-align: left;
+}
+
+.left {
+    display: inline-block;
+    float: left;
+    
+}
+
+table.tables {
+    
+    width: 100%;
+    
+}
+
+img.check {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -10%;
+    
+}
+
+
+.checka {
+    
+    float: right;
+    
+    
+}
+
+
+td.checka {
+    
+    
+}
+
+
+p.receive {
+    font-size: 13.5;
+    font-weight: 100;
+    
+}
+
+p.large1 {
+    font-size: 13.5;
+    font-weight: 100;
+}
+
+p.fix1 {
+    font-size: 13.5;
+    font-weight: 100;
+    padding-bottom: 15%;
+    
+}
+
+p.quick1 {
+    font-size: 13.5;
+    font-weight: 100;
+}
+
+tr.quicker {
+    
+    
+    
+}
+
+/*.footer {
+    margin-top: 15%;
+    background-color: #004272;
+    color: white;
+    /*border-top-width: 10px;
+    border-top-color: #0087D9;*/
+ 
+}*/
+
+
+
+
+
+/*.footer h4 {
+    
+        
+}
+
+.low {
+    
+}
+
+.footer ul {
+    
+    }*/
+
+/*#copyright {
+    margin-top: -10px;
+    
+}*/
+
+/*.footer h5 {
+    
+    border-top: solid #0087D9;
+    
+    
+    
+    /*padding-top: 50px;
+    border-top-width: thin;
+    border-top-color: #0087D9;*/
+    
+}*/

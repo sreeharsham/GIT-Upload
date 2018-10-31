@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="headingstock">Stock Market Search</string>
+    <string name="getquote">Get Quote</string>
+    <string name="clear">Clear</string>
+    <string name="favourites">Favourites</string>
+    <string name="autorefresh">AutoRefresh</string>
+    <string name="sortby">Sort by</string>
+    <string name="order">Order</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="tab_text_1">CURRENT</string>
+    <string name="tab_text_2">HISTORICAL</string>
+    <string name="tab_text_3">NEWS</string>
+    <string name="title_activity_secondary">SecondaryActivity</string>
+</resources>

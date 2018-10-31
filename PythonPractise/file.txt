@@ -1,0 +1,3 @@
+unicomp6.unicomp.net - - [sd] "asdfe" 200 395
+burger.letters.com - - [sd] "asdfe" 304 0
+burger.letters.com - - [sd] "asdfe" 200 1

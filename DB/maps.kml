@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href></Icon></IconStyle>
+</Style>
+<Style id="polyStyle">
+    <PolyStyle>  
+    <color>c00000ff</color>
+    <outline>1</outline>
+    <width>34</width>
+    </PolyStyle>
+</Style>
+<Style id="lineStyle">
+    <LineStyle>
+    	<color>ffffffff</color>
+      <width>2</width>
+    </LineStyle>
+</Style>
+<Placemark><name>1210 W.ADAMSHome</name>
+<styleUrl>#z1</styleUrl><Point><coordinates> -118.28696819999999,34.032451</coordinates></Point>
+</Placemark>
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28544974327087,34.02056373251961</coordinates></Point>
+</Placemark>
+<Placemark><name>SGM Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28915521502495,34.02124066791021</coordinates></Point>
+</Placemark>
+<Placemark><name>Lyon Center</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28838273882866,34.02438517876067</coordinates></Point>
+</Placemark>
+<Placemark><name>SAL Building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28952670097351,34.019528866832</coordinates></Point>
+</Placemark>
+<Placemark><name>VKC Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2839772105217,34.02114174008653</coordinates></Point>
+</Placemark>
+<Placemark><name>Fertitta cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28241348266602,34.01884858305157</coordinates></Point>
+</Placemark>
+<Placemark><name>RTCC cafe</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28616434585166,34.0204366300123</coordinates></Point>
+</Placemark>
+<Placemark><name>OIS building</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28193604946136,34.02208432859836</coordinates></Point>
+</Placemark>
+<Placemark>
+<styleUrl>#polyStyle</styleUrl>
+<Polygon>
+	<outerBoundaryIs>
+		<LinearRing>
+			<coordinates>
+				-118.282413482666,34.0188485830516
+				-118.289526700974,34.019528866832
+				-118.2869682,34.032451
+				-118.281936049461,34.0220843285984
+				-118.282413482666,34.0188485830516
+			</coordinates>
+		</LinearRing>
+	</outerBoundaryIs>
+</Polygon>
+</Placemark>
+
+
+<Placemark>
+	<styleUrl>#lineStyle</styleUrl>
+		<LineString>
+			<coordinates>
+				-118.28696819999999,34.032451,0
+				-118.28838273882866,34.02438517876067,0
+			</coordinates>
+		</LineString>
+</Placemark>
+<Placemark>
+	<styleUrl>#lineStyle</styleUrl>
+		<LineString>
+			<coordinates>
+				-118.28696819999999,34.032451,0
+				-118.28915521502495,34.02124066791021,0
+			</coordinates>
+		</LineString>
+</Placemark>
+<Placemark>
+	<styleUrl>#lineStyle</styleUrl>
+		<LineString>
+			<coordinates>
+				-118.28696819999999,34.032451,0
+				-118.28193604946136,34.02208432859836,0
+			</coordinates>
+		</LineString>
+</Placemark>
+
+
+
+</Document></kml>

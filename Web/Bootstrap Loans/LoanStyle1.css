@@ -1,0 +1,80 @@
+* {
+    font-family: sans-serif;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.heading {
+    width: 100%;
+    
+}
+
+
+.logo {
+    margin-left: 6%;
+    margin-top: 2%;
+    
+}
+
+
+
+
+.heading h6 {
+    color: #0087D9;
+    text-align: right;
+/*    font-size: 10;*/
+    float: right;
+    font-weight: 600;
+    font-family: "arial";
+    margin-top: -7%;
+    margin-right: 22%;
+    width: 40%;
+}
+
+
+
+.Abutton {
+    background-color: #C60935;
+    border-radius: 8%;
+    width: 17%;
+    height: 2%;
+    margin-left: 80%;
+    margin-top: -7%;
+    margin-right: 4%;
+    padding-bottom: 0.5%;
+    
+    padding-top: 0.5%;
+    text-align: center;
+    
+    /*margin: -5.2% 0% 0% 60%;*/
+    
+    
+    
+}
+
+#button {
+    background: none;
+  border: none;
+  font-size: 1em;
+  color: white;
+    font-weight: 600;
+     
+    
+}
+
+.title {
+    margin-top: 5%;
+    background-color: #004272;
+    color: white;
+    text-align: center;
+    height: 36.5%;
+}
+
+
+.title h1 {
+    
+    width: 46%;
+    margin-top: 5%;
+    margin-left: 25%;
+    
+    
+}

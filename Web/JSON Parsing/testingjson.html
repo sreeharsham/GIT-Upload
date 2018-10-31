@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript" src="abc.json"></script>
+             <script type="text/javascript" >
+                function load() {
+                     var mydata = JSON.parse(data);
+                     //alert(mydata.length);
+
+                     var div = document.getElementById('data');
+
+                     for(var i = 0;i < mydata.length; i++)
+                     {
+                        div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
+                     }
+                 }
+        </script>
+    </head>
+    <body>
+        <input type="button" value = "Click me!" onclick="load()"/>
+    <div id= "data">
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var lat=34.0211042,lng=-118.2891911;
+var R=5,r=1,a=4;
+var cos=Math.cos,sin=Math.sin,pi=Math.PI,nRev=10;
+document.write('&ltLineString&gt&ltcoordinates&gt');
+for(var t=0.0;t<(pi*nRev);t+=0.01)
+{
+var x=(R+r)*cos((r/R)*t) - a*cos((1+r/R)*t);
+var y=(R+r)*sin((r/R)*t) - a*sin((1+r/R)*t);
+var y_coord=(lng+y/1000)
+var x_coord=(lat+x/1000)
+document.writeln(''+y_coord+','+x_coord+',0'+''+'<br>');
+}
+document.write('&lt/coordinates&gt&lt/LineString&gt');
+</script>
+</body>
+</html>
